@@ -1,0 +1,89 @@
+/*4x6*/
+/*
+.item1 {grid-area: rgb(0, 152, 38)} a
+.item2 {grid-area: rgb(3, 145, 222)} b
+.item3 {grid-area: rgb(253, 215, 0)} c
+.item4 {grid-area: rgb(88, 47, 0)} d
+.item5 {grid-area: rgb(255, 72, 0)} e
+.item6 {grid-area: rgb(255, 30, 1)} f
+.item7 {grid-area: rgb(67, 35, 208)} g
+.item8 {grid-area: rgb(207, 0, 48)} h
+.item9 {grid-area: rgb(122, 0, 96)} i
+.item10 {grid-area: rgb(3, 145, 222)} j
+*/
+body {
+    background-color: #252525;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #ffffff;
+    padding: 5px;
+    width: 500px;
+    height: 750px;
+    margin: auto;
+  }
+  
+.grid-container > div {
+    
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    padding: 30px;
+    font-size: 20px;
+    color: #252525;
+  }
+
+.item1 {
+    grid-area: 1 / 1 / span 2 / span 2;
+    background-color: #4CB050;
+
+}
+
+.item2 {
+    grid-area: 1 / 3 / auto / span 2;
+    background-color: #03A9F5;
+}
+
+.item3 {
+    grid-area: 2 / 3 / span 2 / auto;
+    background-color: #FEC107;
+}
+
+.item4 {
+    grid-area: 2 / 4 / auto / auto;
+    background-color: #795547;
+}
+
+.item5 {
+    grid-area: 3 / 1 / span 2 / span 2;
+    background-color: #FE5721;
+}
+
+.item6 {
+    grid-area: 3 / 4 / span 2 / span 1;
+    background-color: #3F51B5;
+}
+
+.item7 {
+    grid-area: 4 / 3 / auto / auto;
+    background-color: #F44236;
+}
+
+.item8 {
+    grid-area: 5 / 1 / span 1 / span 3;
+    background-color: #EA1E63;
+}
+
+.item9 {
+    grid-area: 5 / 4 / span 1 / span 1;
+    background-color: #9C28B1;
+}
+
+.item10 {
+    grid-area: 6 / 1 / span 1 / span 4;
+    background-color: #2196F3;
+}
+
+
