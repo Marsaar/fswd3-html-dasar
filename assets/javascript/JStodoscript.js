@@ -106,3 +106,17 @@ window.onload = function() {
   displayDate()
   displayItems()
 };
+
+// fetch API
+let fetchOptions = {
+  "method": "POST",
+  "headers":
+  {
+    "Content-Type": "application/json"
+  },
+  "body": JSON.stringify(item)
+}
+
+fetch('https://crudcrud.com/api/88745613f3284f99a1f325891c7aad1c/todo', fetchOptions)
+.then((response)=> response.json())
+.then((data)=>console.log(data));
