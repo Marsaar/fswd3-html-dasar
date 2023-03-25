@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+body{
+    font-family:Verdana;
+    color:#aaaaaa;
+}
+
+.header1{
+    background-color:#c00000;
+    color: black;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+.header1-sect1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    text-align: left;
+    gap: 0.8em;
+}
+.header1-sect2 a{
+    text-decoration: none;
+    align-content: center;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease-in-out;
+    margin: 10px;
+}
+.header1-sect2 a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+.header2{
+    background-color:#010101;
+    justify-content: center;
+    padding-top: 2em;
+    padding-left: 35em;
+    height: 8em;
+    text-align:left;
+    color:white;
+}
+.header2 p{
+    margin-top: 10px;
+}
+  
+  .main {
+    padding: 10px;
+    float: left;
+    display: flex;
+    height: 27em;
+    width: 60%;
+    padding: 0 20px;
+  }
+
+  .mainsect-1 {
+    display: flex;
+    flex-direction: column;
+    width: 68em;
+    height: fit-content;
+    padding: 1em;
+  }
+  .maincontent{
+    display: flex;
+    padding: 25px;
+    margin-top: 1em;
+    gap: 2em;
+    height: 100%;
+    width: 100%;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    display: flex;
+    box-shadow: 3px -1px 10px 0px rgba(0, 0, 0, 0.56);
+    border-radius: 3px;
+    height: 20em;
+    width: 20em;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+  }
+  .card1 img,
+  .card2 img,
+  .card3 img {
+    display: flex;
+    height: 60%;
+    width: 85%;
+    border-radius: 5px;
+  }
+  
+  .card1 span,
+  .card2 span,
+  .card3 span {
+    display: flex;
+    padding: 1em 0 0 2px;
+    height: 4.5em;
+    width: 17em;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .card1 p,
+  .card2 p,
+  .card3 p {
+    font-size: small;
+    padding: 2px;
+    background-color: rgb(221, 245, 245);
+    border-radius: 5px;
+  }
+
+  .right {
+    background-color: #e5e5e5;
+    float: right;
+    width: 20%;
+    padding: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: left;
+  }
+  .right h4{
+    padding-top: 10px;
+  }
+  .right p{
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
